@@ -2,6 +2,13 @@ from flask import Flask
 app=Flask(__name__)
 @app.route("/")
 def home():
-	return "hello gois iam flask"
+	return """
+	<html>
+	<head>
+	<body>
+	<h1>hello everyooneeee<h1>
+	</body>
+	</head>
+	</html>"""
 if __name__=='__main__':
 	app.run(host='0.0.0.0',port=5000)
